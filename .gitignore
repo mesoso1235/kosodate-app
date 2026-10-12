@@ -1,0 +1,14 @@
+research/*.html
+research/*.xml
+research/*.csv
+research/*.json
+__pycache__/
+.pytest_cache/
+.venv/
+node_modules/
+.env
+supabase/.temp/
+research/*.xlsx
+research/*.txt
+_変更前後の画面/
+research/

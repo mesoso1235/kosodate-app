@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>世田谷区両親学級ポータルサイト</title>
+	<atom:link href="https://welcomebaby-setagaya.net/feed/" rel="self" type="application/rss+xml" />
+	<link>https://welcomebaby-setagaya.net</link>
+	<description>世田谷区で開催している両親学級の概要と申込み</description>
+	<lastBuildDate>Fri, 02 Oct 2026 06:43:46 +0000</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.7.10</generator>
+	<item>
+		<title>10月両親学級には空きがあります（10/2現在）</title>
+		<link>https://welcomebaby-setagaya.net/24608/</link>
+		
+		<dc:creator><![CDATA[事務局]]></dc:creator>
+		<pubDate>Fri, 02 Oct 2026 06:43:46 +0000</pubDate>
+				<category><![CDATA[お知らせ]]></category>
+		<guid isPermaLink="false">https://welcomebaby-setagaya.net/?p=24608</guid>
+
+					<description><![CDATA[10月実施の両親学級は、若干空きがある回がございます。お申込みをご希望される場合は、両親学級事務局へご相談ください。（両親学級事務局お問い合わせ先：０７０－１１８９－４８９９、平日１０時～１６時）]]>]]></description>
+										
+					
+		
+		
+			</item>
+<item>
+		<title>2026年 10月分の両親学級の申し込みは終了しました</title>
+		<link>https://welcomebaby-setagaya.net/23743/</link>
+		
+		<dc:creator><![CDATA[事務局]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 15:00:00 +0000</pubDate>
+				<category><![CDATA[申し込み]]></category>
+		<guid isPermaLink="false">https://welcomebaby-setagaya.net/?p=23743</guid>
+
+					<description><![CDATA[10月分の申し込みは終了しました。決定通知は9月22日(火)に全員にメールにてお知らせします。11月分の申し込みは10月1日より開始します(申込期間 10月1日〜10月15日)。]]>]]></description>
+										
+					
+		
+		
+			</item>
+<item>
+		<title>2026年 9月分の両親学級の申し込みは終了しました</title>
+		<link>https://welcomebaby-setagaya.net/23328/</link>
+		
+		<dc:creator><![CDATA[事務局]]></dc:creator>
+		<pubDate>Sat, 15 Aug 2026 15:00:00 +0000</pubDate>
+				<category><![CDATA[申し込み]]></category>
+		<guid isPermaLink="false">https://welcomebaby-setagaya.net/?p=23328</guid>
+
+					<description><![CDATA[9月分の申し込みは終了しました。決定通知は8月22日(土)に全員にメールにてお知らせします。10月分の申し込みは9月1日より開始します(申込期間 9月1日〜9月15日)。]]>]]></description>
+										
+					
+		
+		
+			</item>
+	</channel>
+</rss>

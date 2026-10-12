@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>NPO法人せたがや子育てネット &#8211; 子育てしながら街に出よう！</title>
+	<atom:link href="https://www.setagaya-kosodate.net/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.setagaya-kosodate.net</link>
+	<description>せたがや子育てネット（旧：ママパパぶりっじ）では、民間の子育てグループに関する情報やクチコミ情報などを中心に、世田谷の様々な子育て情報を提供しています。みなさんからの情報もお待ちしています。</description>
+	<lastBuildDate>Sat, 10 Oct 2026 02:06:23 +0000</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.11</generator>
+	<item>
+		<title>『小児の救命救急講座』を開催しました！</title>
+		<link>https://www.setagaya-kosodate.net/info/27639/</link>
+		
+		<dc:creator><![CDATA[せたがや子育てネット]]></dc:creator>
+		<pubDate>Sat, 10 Oct 2026 02:04:10 +0000</pubDate>
+				<category><![CDATA[おでかけひろば　すぷーん]]></category>
+		<guid isPermaLink="false">https://www.setagaya-kosodate.net/?p=27639</guid>
+
+					<description><![CDATA[]]></description>
+										
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">27639</post-id>	</item>
+<item>
+		<title>『子乗せ自転車安全講習会』を開催しました！</title>
+		<link>https://www.setagaya-kosodate.net/info/27636/</link>
+		
+		<dc:creator><![CDATA[せたがや子育てネット]]></dc:creator>
+		<pubDate>Sat, 10 Oct 2026 01:38:22 +0000</pubDate>
+				<category><![CDATA[おでかけひろば　すぷーん]]></category>
+		<guid isPermaLink="false">https://www.setagaya-kosodate.net/?p=27636</guid>
+
+					<description><![CDATA[]]></description>
+										
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">27636</post-id>	</item>
+<item>
+		<title>明日10/8(木)はぶりっじお休みです</title>
+		<link>https://www.setagaya-kosodate.net/info/27603/</link>
+		
+		<dc:creator><![CDATA[せたがや子育てネット]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 12:26:24 +0000</pubDate>
+				<category><![CDATA[おでかけひろば　ぶりっじ@roka]]></category>
+		<guid isPermaLink="false">https://www.setagaya-kosodate.net/?p=27603</guid>
+
+					<description><![CDATA[]]></description>
+										
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">27603</post-id>	</item>
+	</channel>
+</rss>

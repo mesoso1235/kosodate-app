@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<rdf:RDF 
+
+	xmlns="http://purl.org/rss/1.0/"
+
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+
+	xml:lang="ja">
+
+	<channel rdf:about="https://www.city.setagaya.lg.jp/shinchaku/index.html">
+
+		<title>世田谷区公式ホームページ 新着情報一覧</title>
+
+		<link>https://www.city.setagaya.lg.jp/shinchaku/index.html</link>
+
+		<description></description>
+
+		<items>
+
+			<rdf:Seq>
+
+
+				</rdf:Seq>
+
+		</items>
+
+	</channel>
+
+
+	<item rdf:about="https://www.city.setagaya.lg.jp/02236/35524.html">
+
+		<title>子どものけんりフェス×welcome baby ♡ family FES 開催！</title>
+
+		<link>https://www.city.setagaya.lg.jp/02236/35524.html</link>
+
+		<description></description>
+
+		<dc:creator>子ども・若者部子ども・若者支援課　</dc:creator>
+
+		<dc:subject>子ども・教育・若者支援</dc:subject>
+
+		<dc:publisher>世田谷区</dc:publisher>
+
+		<dc:contributor>子ども・若者部子ども・若者支援課　 </dc:contributor>
+
+		<dc:date>2026-10-09T00:00:00+09:00</dc:date>
+
+	</item>
+<item rdf:about="https://www.city.setagaya.lg.jp/02247/23818.html">
+
+		<title>（中高生世代対象）閉館時間帯の児童館で自習ができます</title>
+
+		<link>https://www.city.setagaya.lg.jp/02247/23818.html</link>
+
+		<description>閉館時間帯の児童館を活用して、中高生世代を対象に自習ができるスペースを設置します。</description>
+
+		<dc:creator>子ども・若者部児童課　</dc:creator>
+
+		<dc:subject>子ども・教育・若者支援</dc:subject>
+
+		<dc:publisher>世田谷区</dc:publisher>
+
+		<dc:contributor>子ども・若者部児童課　 </dc:contributor>
+
+		<dc:date>2026-10-09T00:00:00+09:00</dc:date>
+
+	</item>
+<item rdf:about="https://www.city.setagaya.lg.jp/03078/28475.html">
+
+		<title>成城さくら児童館第46回ちいきこどもまつり「おかしパラダイス～おなかいっぱいめしあがれ～」</title>
+
+		<link>https://www.city.setagaya.lg.jp/03078/28475.html</link>
+
+		<description></description>
+
+		<dc:creator>子ども・若者部成城さくら児童館　</dc:creator>
+
+		<dc:subject>子ども・教育・若者支援</dc:subject>
+
+		<dc:publisher>世田谷区</dc:publisher>
+
+		<dc:contributor>子ども・若者部成城さくら児童館　 </dc:contributor>
+
+		<dc:date>2026-10-07T00:00:00+09:00</dc:date>
+
+	</item>
+<item rdf:about="https://www.city.setagaya.lg.jp/01012/35727.html">
+
+		<title>防犯講習会を開催します</title>
+
+		<link>https://www.city.setagaya.lg.jp/01012/35727.html</link>
+
+		<description>「私は大丈夫」が危ない！最新犯罪の手口と対策を学ぶ講習会を開催します。</description>
+
+		<dc:creator>世田谷総合支所上馬まちづくりセンター　</dc:creator>
+
+		<dc:subject>世田谷地域</dc:subject>
+
+		<dc:publisher>世田谷区</dc:publisher>
+
+		<dc:contributor>世田谷総合支所上馬まちづくりセンター　 </dc:contributor>
+
+		<dc:date>2026-10-13T00:00:00+09:00</dc:date>
+
+	</item>
+<item rdf:about="https://www.city.setagaya.lg.jp/03660/36064.html">
+
+		<title>「てくたくラリー」を開催します（二子玉川地区）</title>
+
+		<link>https://www.city.setagaya.lg.jp/03660/36064.html</link>
+
+		<description>「てくたくラリー」についてのページです。</description>
+
+		<dc:creator>玉川総合支所二子玉川まちづくりセンター　</dc:creator>
+
+		<dc:subject>玉川地域</dc:subject>
+
+		<dc:publisher>世田谷区</dc:publisher>
+
+		<dc:contributor>玉川総合支所二子玉川まちづくりセンター　 </dc:contributor>
+
+		<dc:date>2026-10-13T00:00:00+09:00</dc:date>
+
+	</item>
+<item rdf:about="https://www.city.setagaya.lg.jp/01205/33898.html">
+
+		<title>恵泉通り「まち歩き会」を実施しました</title>
+
+		<link>https://www.city.setagaya.lg.jp/01205/33898.html</link>
+
+		<description></description>
+
+		<dc:creator>道路・交通計画部道路事業推進課　</dc:creator>
+
+		<dc:subject>住まい・街づくり・環境</dc:subject>
+
+		<dc:publisher>世田谷区</dc:publisher>
+
+		<dc:contributor>道路・交通計画部道路事業推進課道路事業推進 </dc:contributor>
+
+		<dc:date>2026-10-12T10:00:00+09:00</dc:date>
+
+	</item>
+
+
+</rdf:RDF>

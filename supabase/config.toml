@@ -1,0 +1,4 @@
+# LINE は Supabase の JWT を送らないので、この関数だけ JWT 検証をオフにする。
+# CLI でデプロイするときは --no-verify-jwt を付けても同じ意味になる。
+[functions.line-webhook]
+verify_jwt = false
