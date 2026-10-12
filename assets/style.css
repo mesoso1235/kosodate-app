@@ -48,7 +48,7 @@ h1, h2, h3, .card-title, .item-title, .news-title, .page-title, .greeting {
 p, dd, li { text-wrap: pretty; }
 a { color: var(--accent); text-underline-offset: .18em; text-decoration-thickness: 1px; }
 a:hover { text-decoration-thickness: 2px; }
-.row-date, .badge, .event-date, .hero-num, .vacancy, time { font-variant-numeric: tabular-nums; }
+.row-date, .badge, .event-date, .vacancy, time { font-variant-numeric: tabular-nums; }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .skip { position: absolute; left: -999px; top: 0; background: var(--card); padding: 8px 12px; z-index: 100; }
@@ -96,17 +96,24 @@ ul.plain, ol.steps { list-style: none; padding: 0; margin: 0; }
 ol.steps { list-style: decimal; padding-left: 1.5em; margin: 8px 0; }
 .bullets { margin: 0; padding-left: 1.2em; }
 
-/* 残り日数：箱に入れず、文字組みだけで見せる */
-.hero { padding: 6px 4px 22px; margin: 0 0 6px; border-bottom: 1px solid var(--line); }
-.hero-lead { font-family: var(--font-display); font-size: 18px; font-weight: 500; color: var(--text); }
-.hero-num { margin: 0; display: flex; align-items: baseline; gap: 4px; font-family: var(--font-display); font-weight: 500; }
-.hero-num strong { font-size: 88px; line-height: 1; color: var(--accent); font-weight: 700; letter-spacing: -.02em; }
-.hero-num span { font-size: 22px; }
-.hero-foot { font-size: 14px; color: var(--muted); margin-top: 8px; }
+/* 残り日数：あいさつの下に1行だけ */
+.days-line { margin: 0 4px 4px; font-size: 14px; color: var(--muted); }
+
+/* 期限：ふだんは日付だけ静かに、7日以内と期限切れだけ色をつける */
+.dl-text { font-size: 13px; white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; }
+.dl-text.soon, .dl-text.today { color: var(--warn); font-weight: 700; }
+.dl-text.overdue { color: var(--bad); font-weight: 700; }
+
+/* 手が空いたら：箱に入れず、控えめに1件 */
+.spare { margin: 4px 4px 18px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.spare-head { font-size: 13px; font-weight: 500; color: var(--muted); font-family: var(--font); }
+.spare-link { font-size: 15px; }
 
 .row-link { display: flex; align-items: center; gap: 8px; padding: 10px 2px; text-decoration: none; color: var(--text); border-top: 1px solid var(--line); min-height: 44px; }
 ul.plain > li:first-child > .row-link { border-top: 0; }
 .row-main { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.row-link a.row-main { color: var(--text); text-decoration: none; }
+.row-link a.row-main:hover { text-decoration: underline; }
 .row-date { color: var(--muted); font-size: 13px; white-space: nowrap; }
 
 .badge { display: inline-block; font-size: 12px; line-height: 1.6; padding: 1px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--text); white-space: nowrap; }
@@ -209,7 +216,6 @@ textarea { resize: vertical; }
 .tabbar a[aria-current="page"] { color: var(--accent); font-weight: 700; }
 .tabbar a[aria-current="page"] svg { stroke-width: 2.3; }
 
-@media (min-width: 720px) { main { padding-top: 16px; } .hero-num strong { font-size: 80px; } }
-@media (min-width: 720px) { .hero-num strong { font-size: 104px; } }
+@media (min-width: 720px) { main { padding-top: 16px; } }
 @media (prefers-color-scheme: dark) { :root { --shadow: none; } }
 @media (prefers-reduced-motion: reduce) { * { transition-duration: 0s !important; } }

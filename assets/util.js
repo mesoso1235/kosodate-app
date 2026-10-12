@@ -101,6 +101,29 @@ export function mergeTimeline(news = [], notices = []) {
   return out;
 }
 
+// タイトルの言葉で、子育て中の家族にはっきり関係ないと分かるもの（迷うものは入れない）
+const IRRELEVANT = ["終了しました", "募集は終了", "受付は終了", "中止", "区職員", "プロポーザル", "入札", "契約", "二十歳", "中高生"];
+const APPLY = ["申込", "申し込", "予約", "受付", "参加者募集"]; // 「募集」だけだと寄附・事業者の募集まで拾う
+
+export function isIrrelevantNews(title) {
+  const t = String(title ?? "");
+  return IRRELEVANT.some((w) => t.includes(w));
+}
+
+/** 自分たちが申し込める・予約できるお知らせか */
+export function isApplyNews(title) {
+  const t = String(title ?? "");
+  return APPLY.some((w) => t.includes(w)) && !isIrrelevantNews(t);
+}
+
+/** ホームの「申し込めるお知らせ」。LINE転送は7日以内、お知らせは申込みで14日以内。LINEを先に n 件 */
+export function homeNotices(timeline, nowMs, n = 2) {
+  const day = 86400000;
+  const line = timeline.filter((x) => x.kind === "line" && x.ts !== null && x.ts >= nowMs - 7 * day);
+  const news = timeline.filter((x) => x.kind === "news" && x.ts !== null && x.ts >= nowMs - 14 * day && isApplyNews(x.title));
+  return [...line, ...news].slice(0, n);
+}
+
 /** 最終閲覧（ミリ秒）より新しいか。日付だけの項目は「最終閲覧の日以降」を新着とする */
 export function isNew(item, prevMs) {
   if (prevMs === null || prevMs === undefined || item.ts === null || item.ts === undefined) return false;

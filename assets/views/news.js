@@ -1,7 +1,7 @@
 import * as store from "../store.js";
 import { loadData } from "../data.js";
 import { fmtShort } from "../dates.js";
-import { mergeTimeline, isNew } from "../util.js";
+import { mergeTimeline, isNew, isIrrelevantNews } from "../util.js";
 import { esc, badge, chips, emptyState, extLink, pageTitle, delegate } from "../ui.js";
 
 const LAST_VISIT = "kosodate:lastVisit";
@@ -21,7 +21,8 @@ export async function render() {
   }
   const news = await loadData("news");
   const isLocal = store.mode() === "local";
-  const all = mergeTimeline(news.items, store.getNotices());
+  // 職員募集・終了済みなど、はっきり関係ないものは隠す（LINE転送はそのまま）
+  const all = mergeTimeline(news.items, store.getNotices()).filter((x) => x.kind === "line" || !isIrrelevantNews(x.title));
   const options = [{ value: "all", label: "すべて" }, "区", "都", "民間", ...(isLocal ? [] : ["LINE"])];
   const list = all.filter((x) => filter === "all" || x.group === filter);
 
