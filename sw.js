@@ -1,6 +1,6 @@
 // Service Worker。アプリの枠はキャッシュ優先、data/*.json は通信優先（オフライン時は前回の内容）。
 // アプリを更新したら VERSION を上げてください（古いキャッシュが入れ替わります）。
-const VERSION = "v3";
+const VERSION = "v4";
 const SHELL_CACHE = `kosodate-shell-${VERSION}`;
 const DATA_CACHE = `kosodate-data-${VERSION}`;
 const LIB_CACHE = `kosodate-lib-${VERSION}`;

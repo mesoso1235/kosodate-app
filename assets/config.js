@@ -5,5 +5,5 @@
 // をそれぞれ "" の中に貼り付けてください。
 // （anon キーは公開して問題ないキーです。service_role キーは絶対にここへ貼らないでください）
 // 両方が空のあいだは「ローカルモード」（この端末だけで動く）になります。
-export const SUPABASE_URL = "";
-export const SUPABASE_ANON_KEY = "";
+export const SUPABASE_URL = "https://jzvrfbclkslnobpddqok.supabase.co";
+export const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp6dnJmYmNsa3Nsbm9icGRkcW9rIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE4MjAwMzQsImV4cCI6MjEwNzM5NjAzNH0.afZW6BO88jYqmsQNI5BdcPlrw3cbRiTd4W6fAOvLmKg";
