@@ -80,6 +80,15 @@ export function deadlineStatus(deadlineDate, today) {
   return { days, kind: days <= 14 ? "soon" : "later", label: `あと${days}日` };
 }
 
+/** 期限の書き方。ふだんは日付だけ、7日以内は日数も足す */
+export function deadlineText(deadlineDate, today) {
+  const days = diffDays(today, deadlineDate);
+  if (days < 0) return { text: `期限を過ぎました（${fmtShort(deadlineDate)}）`, kind: "overdue" };
+  if (days === 0) return { text: "今日まで", kind: "today" };
+  if (days <= 7) return { text: `${fmtShort(deadlineDate)}まで・あと${days}日`, kind: "soon" };
+  return { text: `${fmtShort(deadlineDate)}まで`, kind: "later" };
+}
+
 /**
  * ホームの大きなカード用。
  * born: 誕生日を過ぎている → 生まれて N日目（誕生日当日が1日目）

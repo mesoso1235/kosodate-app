@@ -1,56 +1,64 @@
 import * as store from "../store.js";
 import { loadData, getDateCtx } from "../data.js";
-import { startOfDay, countdown, greeting, fmtJa, fmtShort, parseYmd } from "../dates.js";
-import { enrich, pickThisWeek } from "../procedures.js";
-import { mergeTimeline } from "../util.js";
-import { esc, badge, extLink } from "../ui.js";
+import { startOfDay, countdown, greeting, fmtShort, parseYmd, deadlineText } from "../dates.js";
+import { enrich, pickNow } from "../procedures.js";
+import { mergeTimeline, homeNotices } from "../util.js";
+import { esc, extLink } from "../ui.js";
 
-function countdownCard(ctx, today) {
+// あいさつの下に1行だけ。大きな数字にはしない
+function daysLine(ctx, today) {
   const c = countdown(ctx, today);
-  if (c.kind === "born") {
-    return `<section class="hero" aria-label="日数">
-      <p class="hero-lead">赤ちゃんが生まれて</p>
-      <p class="hero-num"><strong>${c.day}</strong><span>日目</span></p>
-      <p class="hero-foot">毎日おつかれさまです。ふたりのペースで。</p></section>`;
-  }
+  if (c.kind === "born") return `赤ちゃんが生まれて ${c.day}日目`;
   if (c.kind === "before") {
-    const what = c.isBirth ? "誕生日" : "出産予定日";
-    const msg = c.days === 0 ? "今日が予定日です。落ち着いて待ちましょう。" : `${what}は ${fmtJa(c.target)}`;
-    return `<section class="hero" aria-label="カウントダウン">
-      <p class="hero-lead">赤ちゃんに会えるまで</p>
-      <p class="hero-num"><span>あと</span><strong>${c.days}</strong><span>日</span></p>
-      <p class="hero-foot">${esc(msg)}</p></section>`;
+    if (c.days === 0) return c.isBirth ? "今日が誕生日です" : "今日が予定日です";
+    return `${c.isBirth ? "誕生日" : "予定日"}まで あと${c.days}日（${esc(fmtShort(c.target))}）`;
   }
-  if (c.kind === "pastdue") {
-    return `<section class="hero" aria-label="予定日">
-      <p class="hero-lead">予定日から</p>
-      <p class="hero-num"><strong>${c.days}</strong><span>日</span></p>
-      <p class="hero-foot">生まれたら、<a href="#/settings">設定</a>で誕生日を入れてください。</p></section>`;
-  }
-  return `<section class="hero"><p class="hero-lead">まず<a href="#/settings">設定</a>で出産予定日を入れてください。</p></section>`;
+  if (c.kind === "pastdue") return `予定日から ${c.days}日。生まれたら<a href="#/settings">設定</a>で誕生日を入れてください`;
+  return `まず<a href="#/settings">設定</a>で出産予定日を入れてください`;
 }
 
-function todoCard(list, today) {
-  const rows = list
+function nowCard({ now, next }, today, hasDate) {
+  const rows = now
     .map((x) => {
-      const cls = x.status ? x.status.kind : "";
-      const dl = x.status ? `<span class="badge dl ${esc(cls)}">${esc(x.status.label)}</span>` : "";
-      return `<li><a class="row-link" href="#/todo"><span class="row-main">${esc(x.title)}</span>${dl}</a></li>`;
+      const dl = deadlineText(x.deadline.date, today);
+      return `<li><a class="row-link" href="#/todo"><span class="row-main">${esc(x.title)}</span><span class="dl-text ${dl.kind}">${esc(dl.text)}</span></a></li>`;
     })
     .join("");
-  return `<section class="card"><div class="card-head"><h2>今週やること</h2><a class="more" href="#/todo">すべて見る</a></div>
-    ${rows ? `<ul class="plain">${rows}</ul>` : `<p class="muted">いま急ぐ手続きはありません。</p>`}</section>`;
+  const overdueNote = now.some((x) => x.status.days < 0)
+    ? `<p class="muted note">済んでいたら、<a href="#/todo">やること</a>でチェックを付けてください。</p>`
+    : "";
+  let empty = `<p class="muted">予定日を入れると、ここに手続きが並びます。</p>`;
+  if (hasDate) {
+    empty = next
+      ? `<p class="muted">いま急ぐ手続きはありません。次は「${esc(next.title)}」（${esc(fmtShort(next.deadline.date))}まで）。</p>`
+      : `<p class="muted">いま急ぐ手続きはありません。</p>`;
+  }
+  return `<section class="card"><div class="card-head"><h2>いまやること</h2><a class="more" href="#/todo">すべて見る</a></div>
+    ${rows ? `<ul class="plain">${rows}</ul>${overdueNote}` : empty}</section>`;
 }
 
-function newsCard(items) {
+// 期限のないものを1件だけ、控えめに
+function spareLine(item) {
+  if (!item) return "";
+  return `<section class="spare" aria-label="手が空いたら"><h2 class="spare-head">手が空いたら</h2>
+    <a class="spare-link" href="#/todo">${esc(item.title)}</a></section>`;
+}
+
+function noticesCard(items) {
+  if (!items.length) return "";
   const rows = items
     .map((x) => {
       const d = x.ts ? fmtShort(new Date(x.ts)) : "";
-      return `<li><a class="row-link" href="#/news"><span class="row-main">${esc(x.title)}</span>${badge(x.group, "src")}<span class="row-date">${esc(d)}</span></a></li>`;
+      const date = `<span class="row-date">${esc(x.kind === "line" ? `LINE ${d}` : d)}</span>`;
+      if (x.kind === "news" && x.url) {
+        const link = extLink(x.url, x.title, "row-main");
+        if (link) return `<li><div class="row-link">${link}${date}</div></li>`;
+      }
+      return `<li><a class="row-link" href="#/news"><span class="row-main">${esc(x.title || "（タイトルなし）")}</span>${date}</a></li>`;
     })
     .join("");
-  return `<section class="card"><div class="card-head"><h2>新着のお知らせ</h2><a class="more" href="#/news">もっと見る</a></div>
-    ${rows ? `<ul class="plain">${rows}</ul>` : `<p class="muted">まだありません。毎朝6時に集めに行きます。</p>`}</section>`;
+  return `<section class="card"><div class="card-head"><h2>申し込めるお知らせ</h2><a class="more" href="#/news">お知らせ一覧</a></div>
+    <ul class="plain">${rows}</ul></section>`;
 }
 
 function eventsCard(events, today) {
@@ -61,24 +69,25 @@ function eventsCard(events, today) {
     .filter((x) => x.s && (x.en || x.s).getTime() >= today.getTime())
     .sort((a, b) => a.s - b.s)
     .slice(0, 3);
+  if (!list.length) return "";
   const rows = list
     .map(({ e, s }) => `<li><a class="row-link" href="#/search/events"><span class="row-main">${esc(e.title)}</span><span class="row-date">${esc(fmtShort(s))}</span></a></li>`)
     .join("");
   return `<section class="card"><div class="card-head"><h2>気になるイベント</h2><a class="more" href="#/search/events">イベントを探す</a></div>
-    ${rows ? `<ul class="plain">${rows}</ul>` : `<p class="muted">イベントの ☆ を押すと、ここに並びます。</p>`}</section>`;
+    <ul class="plain">${rows}</ul></section>`;
 }
 
 export async function render() {
   const today = startOfDay(new Date());
   const ctx = getDateCtx();
   const [proc, news, events] = await Promise.all([loadData("procedures"), loadData("news"), loadData("events")]);
-  const checks = store.getChecks();
-  const week = pickThisWeek(enrich(proc.items, ctx, today), checks, 5);
-  const timeline = mergeTimeline(news.items, store.getNotices()).slice(0, 3);
+  const picked = pickNow(enrich(proc.items, ctx, today), store.getChecks());
+  const notices = homeNotices(mergeTimeline(news.items, store.getNotices()), Date.now());
   const html = `<h1 class="greeting">${esc(greeting(new Date().getHours()))}</h1>
-    ${countdownCard(ctx, today)}
-    ${todoCard(week, today)}
-    ${newsCard(timeline)}
+    <p class="days-line">${daysLine(ctx, today)}</p>
+    ${nowCard(picked, today, !!(ctx.due || ctx.birth))}
+    ${spareLine(picked.spare)}
+    ${noticesCard(notices)}
     ${eventsCard(events.items, today)}`;
   return { html };
 }

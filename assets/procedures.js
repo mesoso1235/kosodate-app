@@ -28,10 +28,19 @@ export function byDeadline(a, b) {
   return a.index - b.index;
 }
 
-/** 今週やること: 未完了のうち、開始日が来ているものを期限の近い順に n 件 */
-export function pickThisWeek(enriched, checks, n = 5) {
-  const incomplete = enriched.filter((x) => !(checks[x.id] && checks[x.id].done));
-  const started = incomplete.filter((x) => x.started);
-  const pool = started.length ? started : incomplete;
-  return [...pool].sort(byDeadline).slice(0, n);
+/**
+ * ホーム用。未完了のうち
+ * now:   期限まで0〜30日、または過ぎて1〜7日のものを近い順に3件
+ * spare: 期限なし・priority high・開始済みのものを、開始日の新しい順に1件（古いものは済んでいることが多い）
+ * next:  now が空のとき、その先で一番近い期限のもの
+ */
+export function pickNow(enriched, checks) {
+  const open = enriched.filter((x) => !(checks[x.id] && checks[x.id].done));
+  const dated = open.filter((x) => x.status).sort(byDeadline);
+  const now = dated.filter((x) => x.status.days >= -7 && x.status.days <= 30).slice(0, 3);
+  const spare = open
+    .filter((x) => !x.deadline && x.priority === "high" && x.started)
+    .sort((a, b) => (b.start ? b.start.date.getTime() : -Infinity) - (a.start ? a.start.date.getTime() : -Infinity) || a.index - b.index)[0] || null;
+  const next = now.length ? null : dated.find((x) => x.status.days > 30) || null;
+  return { now, spare, next };
 }

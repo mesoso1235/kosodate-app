@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { parseYmd, fmtYmd, addDays, diffDays, deadlineOf, startOf, deadlineStatus, countdown, greeting } from "../../assets/dates.js";
-import { enrich, pickThisWeek } from "../../assets/procedures.js";
+import { parseYmd, fmtYmd, addDays, diffDays, deadlineOf, startOf, deadlineStatus, countdown, greeting, deadlineText } from "../../assets/dates.js";
+import { enrich, pickNow } from "../../assets/procedures.js";
 
 const d = (s) => parseYmd(s);
 
@@ -56,17 +56,45 @@ test("greeting", () => {
   assert.equal(greeting(14), "こんにちは");
   assert.equal(greeting(20), "こんばんは");
 });
-test("pickThisWeek: 未完了・開始済み・期限が近い順で5件まで", () => {
+test("deadlineText: 日付で書き、7日以内だけ日数を足す", () => {
+  const today = d("2030-01-23");
+  assert.deepEqual(deadlineText(d("2030-02-22"), today), { text: "2/22(金)まで", kind: "later" });
+  assert.deepEqual(deadlineText(d("2030-01-31"), today), { text: "1/31(木)まで", kind: "later" });
+  assert.deepEqual(deadlineText(d("2030-01-30"), today), { text: "1/30(水)まで・あと7日", kind: "soon" });
+  assert.deepEqual(deadlineText(d("2030-01-23"), today), { text: "今日まで", kind: "today" });
+  assert.deepEqual(deadlineText(d("2030-01-20"), today), { text: "期限を過ぎました（1/20(日)）", kind: "overdue" });
+});
+test("pickNow: 期限30日以内と、過ぎて7日以内を、近い順に3件", () => {
+  const ctx = { due: d("2030-03-15"), birth: null }; // today から 51日後
+  const today = d("2030-01-23");
+  const items = [
+    { id: "a", anchor: "due", start_offset_days: -200, deadline_offset_days: -60 }, // 9日過ぎ → 出さない
+    { id: "b", anchor: "due", start_offset_days: -200, deadline_offset_days: -55 }, // 4日過ぎ
+    { id: "c", anchor: "due", start_offset_days: -200, deadline_offset_days: -40 }, // あと11日
+    { id: "d", anchor: "due", start_offset_days: -200, deadline_offset_days: -21 }, // あと30日
+    { id: "e", anchor: "due", start_offset_days: -200, deadline_offset_days: -20 }, // あと31日 → 出さない
+    { id: "f", anchor: "due", start_offset_days: -200, deadline_offset_days: -45 }, // 済み
+    { id: "g", anchor: "due", start_offset_days: -200, deadline_offset_days: -48 }, // あと3日
+    { id: "h", anchor: "due", start_offset_days: -100, deadline_offset_days: null, priority: "high" },
+    { id: "i", anchor: "due", start_offset_days: -120, deadline_offset_days: null, priority: "high" },
+    { id: "j", anchor: "due", start_offset_days: -150, deadline_offset_days: null, priority: "normal" },
+    { id: "k", anchor: "due", start_offset_days: 0, deadline_offset_days: null, priority: "high" }, // 未開始
+  ];
+  const r = pickNow(enrich(items, ctx, today), { f: { done: true } });
+  assert.deepEqual(r.now.map((x) => x.id), ["b", "g", "c"]);
+  assert.equal(r.spare.id, "h"); // 開始日が新しい方（古いものは済んでいることが多い）
+  assert.equal(r.next, null);
+});
+test("pickNow: いまやることが0件なら次の期限を1件", () => {
   const ctx = { due: d("2030-03-15"), birth: null };
   const today = d("2030-01-23");
   const items = [
-    { id: "a", anchor: "due", start_offset_days: -100, deadline_offset_days: -10 },
-    { id: "b", anchor: "due", start_offset_days: -100, deadline_offset_days: -40 },
-    { id: "c", anchor: "due", start_offset_days: 0, deadline_offset_days: 5 }, // 未開始
-    { id: "d", anchor: "due", start_offset_days: -100, deadline_offset_days: null },
-    { id: "e", anchor: "due", start_offset_days: -100, deadline_offset_days: -60 },
+    { id: "x", anchor: "due", start_offset_days: -200, deadline_offset_days: -10 },
+    { id: "y", anchor: "due", start_offset_days: -200, deadline_offset_days: -20 },
+    { id: "z", anchor: "due", start_offset_days: -200, deadline_offset_days: -60 }, // 9日過ぎ
   ];
-  const r = pickThisWeek(enrich(items, ctx, today), { e: { done: true } }, 5);
-  assert.deepEqual(r.map((x) => x.id), ["b", "a", "d"]);
-  assert.equal(pickThisWeek(enrich(items, ctx, today), {}, 2).length, 2);
+  const r = pickNow(enrich(items, ctx, today), {});
+  assert.deepEqual(r.now, []);
+  assert.equal(r.next.id, "y");
+  assert.equal(r.spare, null);
 });

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { escapeHtml, safeUrl, haversineKm, sortByDistance, mergeTimeline, isNew, nameFromEmail, parseLatLng, isNurseryType, normalizeSources, fmtDistance } from "../../assets/util.js";
+import { escapeHtml, safeUrl, haversineKm, sortByDistance, mergeTimeline, isNew, nameFromEmail, parseLatLng, isNurseryType, normalizeSources, fmtDistance, isIrrelevantNews, isApplyNews, homeNotices } from "../../assets/util.js";
 
 test("escapeHtml", () => {
   assert.equal(escapeHtml(`<img src=x onerror="a('b')">&`), "&lt;img src=x onerror=&quot;a(&#39;b&#39;)&quot;&gt;&amp;");
@@ -79,4 +79,39 @@ test("normalizeSources はいろいろな形を受ける", () => {
   const b = normalizeSources({ setagaya: { last_success_at: "t", item_count: 3, last_error: "boom" } });
   assert.equal(b[0].name, "setagaya");
   assert.equal(b[0].error, "boom");
+});
+
+test("isIrrelevantNews: 言葉ではっきり関係ないものだけ", () => {
+  assert.equal(isIrrelevantNews("【募集は終了しました】令和8年度 世田谷区職員「保育士(経験者)」の募集"), true);
+  assert.equal(isIrrelevantNews("「児童館運営支援システム導入及びシステム運用保守業務委託契約」公募型プロポーザルの実施結果について"), true);
+  assert.equal(isIrrelevantNews("【終了しました】第29回アドベンチャーin多摩川いかだ下り大会"), true);
+  assert.equal(isIrrelevantNews("10/5(月)「助産師さんとみんなでおしゃべり」中止のお知らせ"), true);
+  assert.equal(isIrrelevantNews("（中高生世代対象）閉館時間帯の児童館で自習ができます"), true);
+  assert.equal(isIrrelevantNews("2026年11月分の両親学級の申し込みを開始しました（申込期間 10/1～10/15）"), false);
+  assert.equal(isIrrelevantNews("折り紙タイム"), false);
+  assert.equal(isIrrelevantNews("【ベビーシッター利用支援事業】区の職員等によるシッティング現場立ち会い"), false);
+});
+test("isApplyNews: 申込み・予約などで、関係ないものは除く", () => {
+  assert.equal(isApplyNews("2026年11月分の両親学級の申し込みを開始しました（申込期間 10/1～10/15）"), true);
+  assert.equal(isApplyNews("10月の予約が必要なプログラム、予約開始しました"), true);
+  assert.equal(isApplyNews("「二十歳のつどい」実行委員の募集 ※今年度の募集は終了しました"), false);
+  assert.equal(isApplyNews("折り紙タイム"), false);
+  assert.equal(isApplyNews("喜多見児童館 陶芸窯応援プロジェクト【寄附金を募集します（ふるさと納税）】"), false);
+  assert.equal(isApplyNews("認可保育所整備・運営事業者の募集（提案型：令和10年4月開園）"), false);
+  assert.equal(isApplyNews("親子ヨガの参加者募集"), true);
+});
+test("homeNotices: LINEは7日以内、お知らせは申込みで14日以内、LINEを先に2件", () => {
+  const now = new Date(2030, 0, 23, 12).getTime();
+  const day = 86400000;
+  const t = (kind, title, ago) => ({ kind, title, ts: now - ago * day });
+  const timeline = [
+    t("news", "両親学級の申し込み", 1),
+    t("line", "区からのお知らせ", 2),
+    t("news", "折り紙タイム", 3),
+    t("news", "予約開始しました", 10),
+    t("line", "古いLINE", 8),
+    t("news", "昔の申し込み", 20),
+  ];
+  assert.deepEqual(homeNotices(timeline, now).map((x) => x.title), ["区からのお知らせ", "両親学級の申し込み"]);
+  assert.deepEqual(homeNotices(timeline, now, 5).map((x) => x.title), ["区からのお知らせ", "両親学級の申し込み", "予約開始しました"]);
 });
