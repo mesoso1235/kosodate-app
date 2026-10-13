@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-13T01:10:02+09:00",
+ "updated_at": "2026-10-13T11:19:03+09:00",
  "items": [
   {
    "id": "288f1fcbe9aa",
@@ -32,6 +32,15 @@
    "id": "d1668d870d61",
    "title": "（中高生世代対象）閉館時間帯の児童館で自習ができます",
    "url": "https://www.city.setagaya.lg.jp/02247/23818.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-09"
+  },
+  {
+   "id": "e5901c77bc6a",
+   "title": "区立保育園非常勤職員（用務）の募集（令和8年12月1日任用）",
+   "url": "https://www.city.setagaya.lg.jp/02243/36311.html",
    "source_id": "setagaya",
    "source": "世田谷区",
    "category": "区",
