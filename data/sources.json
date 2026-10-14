@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-10-13T11:19:03+09:00",
+ "updated_at": "2026-10-14T09:02:24+09:00",
  "sources": [
   {
    "id": "setagaya",
    "name": "世田谷区",
    "category": "区",
    "ok": true,
-   "count": 8,
-   "last_success": "2026-10-13T11:18:50+09:00",
+   "count": 7,
+   "last_success": "2026-10-14T09:02:11+09:00",
    "error": null
   },
   {
@@ -15,8 +15,8 @@
    "name": "世田谷区 子ども・教育(新着一覧)",
    "category": "区",
    "ok": true,
-   "count": 48,
-   "last_success": "2026-10-13T11:18:51+09:00",
+   "count": 49,
+   "last_success": "2026-10-14T09:02:12+09:00",
    "error": null
   },
   {
@@ -25,7 +25,7 @@
    "category": "区",
    "ok": true,
    "count": 10,
-   "last_success": "2026-10-13T11:18:53+09:00",
+   "last_success": "2026-10-14T09:02:14+09:00",
    "error": null
   },
   {
@@ -34,7 +34,7 @@
    "category": "民間",
    "ok": true,
    "count": 10,
-   "last_success": "2026-10-13T11:18:54+09:00",
+   "last_success": "2026-10-14T09:02:16+09:00",
    "error": null
   },
   {
@@ -43,7 +43,7 @@
    "category": "民間",
    "ok": true,
    "count": 10,
-   "last_success": "2026-10-13T11:18:56+09:00",
+   "last_success": "2026-10-14T09:02:16+09:00",
    "error": null
   },
   {
@@ -52,7 +52,7 @@
    "category": "民間",
    "ok": true,
    "count": 17,
-   "last_success": "2026-10-13T11:19:01+09:00",
+   "last_success": "2026-10-14T09:02:22+09:00",
    "error": null
   },
   {
@@ -61,7 +61,7 @@
    "category": "都",
    "ok": true,
    "count": 5,
-   "last_success": "2026-10-13T11:19:03+09:00",
+   "last_success": "2026-10-14T09:02:24+09:00",
    "error": null
   },
   {

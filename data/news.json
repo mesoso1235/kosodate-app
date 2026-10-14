@@ -1,6 +1,24 @@
 {
- "updated_at": "2026-10-13T11:19:03+09:00",
+ "updated_at": "2026-10-14T09:02:24+09:00",
  "items": [
+  {
+   "id": "f85ac5b6d6d6",
+   "title": "園庭であそぼう！～園庭開放～",
+   "url": "https://www.city.setagaya.lg.jp/03013/25168.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-14"
+  },
+  {
+   "id": "1388e6ba2e61",
+   "title": "児童課事務補助（会計年度任用職員）募集",
+   "url": "https://www.city.setagaya.lg.jp/02247/28679.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-13"
+  },
   {
    "id": "288f1fcbe9aa",
    "title": "『小児の救命救急講座』を開催しました！",
@@ -296,6 +314,15 @@
    "source_id": "setagaya",
    "source": "世田谷区",
    "category": "区",
+   "published_at": "2026-09-17"
+  },
+  {
+   "id": "018a722c3cad",
+   "title": "東京都立病院機構・東京都共催「妊娠・出産・育児 まとめて医療講座」 第２回「みんなの妊活ガイド～知っていますか？妊娠出産の正しい知識～」を開催します！",
+   "url": "https://tokyohealth20261003.peatix.com/view",
+   "source_id": "kodomo-smile",
+   "source": "こどもスマイルムーブメント",
+   "category": "都",
    "published_at": "2026-09-17"
   },
   {
