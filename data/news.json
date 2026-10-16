@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-16T08:26:00+09:00",
+ "updated_at": "2026-10-17T08:08:00+09:00",
  "items": [
   {
    "id": "9a384ce2201d",
@@ -8,6 +8,51 @@
    "source_id": "welcomebaby",
    "source": "世田谷区 両親学級ポータル",
    "category": "区",
+   "published_at": "2026-10-16"
+  },
+  {
+   "id": "0f3a6bf7f71d",
+   "title": "おでかけひろばまもりん「助産師講座」",
+   "url": "https://www.city.setagaya.lg.jp/03086/36468.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-16"
+  },
+  {
+   "id": "b0e8627acc81",
+   "title": "松沢児童館 「第2弾！卓球大会」",
+   "url": "https://www.city.setagaya.lg.jp/03068/36497.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-16"
+  },
+  {
+   "id": "0a04c182edbc",
+   "title": "松沢児童館 子育て講座「赤ちゃんも大人もここちよい抱っこの講座」",
+   "url": "https://www.city.setagaya.lg.jp/03068/36508.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-16"
+  },
+  {
+   "id": "ef8c86f050a1",
+   "title": "松沢児童館 「おもちゃ病院」",
+   "url": "https://www.city.setagaya.lg.jp/03068/36513.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-16"
+  },
+  {
+   "id": "a0fbce833121",
+   "title": "保育園に行ってきました！",
+   "url": "https://www.setagaya-kosodate.net/info/27684/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
    "published_at": "2026-10-16"
   },
   {
@@ -50,6 +95,15 @@
    "id": "1d92148ac063",
    "title": "【募集は終了しました】【令和9年1月以降採用】障害のある方を対象とした世田谷区児童館業務員用務（会計年度任用職員）の募集",
    "url": "https://www.city.setagaya.lg.jp/02026/34708.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-15"
+  },
+  {
+   "id": "3bb86f4c3dea",
+   "title": "世田谷区民健康村からのお知らせ（冬のご案内）",
+   "url": "https://www.city.setagaya.lg.jp/02237/28541.html",
    "source_id": "setagaya",
    "source": "世田谷区",
    "category": "区",
@@ -387,15 +441,6 @@
    "source": "世田谷区 両親学級ポータル",
    "category": "区",
    "published_at": "2026-09-16"
-  },
-  {
-   "id": "3bb86f4c3dea",
-   "title": "世田谷区民健康村からのお知らせ（秋のご案内）",
-   "url": "https://www.city.setagaya.lg.jp/02237/28541.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-09-15"
   },
   {
    "id": "bb90697bd42e",
