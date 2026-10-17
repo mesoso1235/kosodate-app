@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-17T08:08:00+09:00",
+ "updated_at": "2026-10-18T07:46:46+09:00",
  "items": [
   {
    "id": "9a384ce2201d",
@@ -441,6 +441,42 @@
    "source": "世田谷区 両親学級ポータル",
    "category": "区",
    "published_at": "2026-09-16"
+  },
+  {
+   "id": "f0dc47f64772",
+   "title": "鎌田児童館 10月のピヨピヨひろば",
+   "url": "https://www.city.setagaya.lg.jp/03081/35831.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-09-15"
+  },
+  {
+   "id": "df58d2cba6aa",
+   "title": "鎌田児童館 10月のトコトコひろば",
+   "url": "https://www.city.setagaya.lg.jp/03081/35832.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-09-15"
+  },
+  {
+   "id": "e1a37557245b",
+   "title": "鎌田児童館 のほほんクラフト「お花のゴムバンド」",
+   "url": "https://www.city.setagaya.lg.jp/03081/35834.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-09-15"
+  },
+  {
+   "id": "5dd2dac0de66",
+   "title": "鎌田児童館 10月のTEENS PLAY TIME",
+   "url": "https://www.city.setagaya.lg.jp/03081/35835.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-09-15"
   },
   {
    "id": "bb90697bd42e",
