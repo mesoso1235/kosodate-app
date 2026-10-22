@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-22T08:48:30+09:00",
+ "updated_at": "2026-10-23T08:46:43+09:00",
  "items": [
   {
    "id": "cea02aa6b559",
@@ -17,6 +17,15 @@
    "source_id": "setagaya",
    "source": "世田谷区",
    "category": "区",
+   "published_at": "2026-10-22"
+  },
+  {
+   "id": "af076b65828b",
+   "title": "うたごえレストラン万福亭",
+   "url": "https://www.setagaya-kosodate.net/info/27722/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
    "published_at": "2026-10-22"
   },
   {
