@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-23T08:46:43+09:00",
+ "updated_at": "2026-10-24T08:40:22+09:00",
  "items": [
   {
    "id": "cea02aa6b559",
@@ -8,7 +8,16 @@
    "source_id": "setagaya",
    "source": "世田谷区",
    "category": "区",
-   "published_at": "2026-10-22"
+   "published_at": "2026-10-23"
+  },
+  {
+   "id": "104a4a77caba",
+   "title": "10月のころころすくすく",
+   "url": "https://www.setagaya-kosodate.net/info/27733/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
+   "published_at": "2026-10-23"
   },
   {
    "id": "3334303d3aa6",
