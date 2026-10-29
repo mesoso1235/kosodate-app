@@ -1,6 +1,33 @@
 {
- "updated_at": "2026-10-27T09:08:51+09:00",
+ "updated_at": "2026-10-29T09:31:51+09:00",
  "items": [
+  {
+   "id": "6268942b34bc",
+   "title": "子どものけんりフェス×welcome baby ♡ family FES 開催！",
+   "url": "https://www.city.setagaya.lg.jp/02236/35524.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-28"
+  },
+  {
+   "id": "24a507109f02",
+   "title": "おでかけひろばまもりん「おんぶ体験講座」",
+   "url": "https://www.city.setagaya.lg.jp/03086/36719.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-28"
+  },
+  {
+   "id": "ded3efb63c78",
+   "title": "システムメンテナンスのお知らせ",
+   "url": "https://kodomo-smile.metro.tokyo.lg.jp/notifications/500",
+   "source_id": "kodomo-smile",
+   "source": "こどもスマイルムーブメント",
+   "category": "都",
+   "published_at": "2026-10-28"
+  },
   {
    "id": "b70b6ee894a9",
    "title": "11月の予約が必要なプログラム、予約開始しました！",
@@ -279,15 +306,6 @@
    "source": "せたがや子育てネット",
    "category": "民間",
    "published_at": "2026-10-10"
-  },
-  {
-   "id": "6268942b34bc",
-   "title": "子どものけんりフェス×welcome baby ♡ family FES 開催！",
-   "url": "https://www.city.setagaya.lg.jp/02236/35524.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-10-09"
   },
   {
    "id": "d1668d870d61",
