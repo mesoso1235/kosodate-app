@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-25T07:47:31+09:00",
+ "updated_at": "2026-10-31T09:15:37+09:00",
  "items": [
   {
    "id": "0696393535d5",
@@ -98,6 +98,28 @@
    "place": "",
    "target": "",
    "url": "https://www.setagaya-kosodate.net/event/27533/",
+   "source": "せたがや子育てネット"
+  },
+  {
+   "id": "db67b909b0d9",
+   "title": "産前・産後のセルフケア講座（12/11弦巻）",
+   "start": "2026-12-11",
+   "end": null,
+   "time": null,
+   "place": "",
+   "target": "",
+   "url": "https://www.setagaya-kosodate.net/event/27538/",
+   "source": "せたがや子育てネット"
+  },
+  {
+   "id": "31bab4e80a8d",
+   "title": "産前・産後のセルフケア講座（12/12烏山）",
+   "start": "2026-12-12",
+   "end": null,
+   "time": null,
+   "place": "",
+   "target": "",
+   "url": "https://www.setagaya-kosodate.net/event/27537/",
    "source": "せたがや子育てネット"
   }
  ]

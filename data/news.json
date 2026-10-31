@@ -1,6 +1,33 @@
 {
- "updated_at": "2026-10-29T09:31:51+09:00",
+ "updated_at": "2026-10-31T09:15:37+09:00",
  "items": [
+  {
+   "id": "b6d5993af9bc",
+   "title": "【終了しました】第29回アドベンチャーin多摩川いかだ下り大会",
+   "url": "https://www.city.setagaya.lg.jp/02059/2103.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-30"
+  },
+  {
+   "id": "2fa2df0b8cd9",
+   "title": "【受付は終了しました】北沢健康づくり講演会 子育て中の保護者向け ～子どもとおとなの眠りを整える～",
+   "url": "https://www.city.setagaya.lg.jp/02208/online_tetsuzuki/27608.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-10-30"
+  },
+  {
+   "id": "7e03045e2a0c",
+   "title": "こどもスマイルムーブメントアンバサダー 栗山英樹さんの特別インタビューを公開しました！",
+   "url": "https://kodomo-smile.metro.tokyo.lg.jp/stp/interviews/r8_kuriyamasan.html",
+   "source_id": "kodomo-smile",
+   "source": "こどもスマイルムーブメント",
+   "category": "都",
+   "published_at": "2026-10-30"
+  },
   {
    "id": "6268942b34bc",
    "title": "子どものけんりフェス×welcome baby ♡ family FES 開催！",
@@ -26,6 +53,15 @@
    "source_id": "kodomo-smile",
    "source": "こどもスマイルムーブメント",
    "category": "都",
+   "published_at": "2026-10-28"
+  },
+  {
+   "id": "4578c86209cd",
+   "title": "【募集は終了しました】認可保育所整備・運営事業者の募集（提案型：令和10年4月開園）",
+   "url": "https://www.city.setagaya.lg.jp/02243/22540.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
    "published_at": "2026-10-28"
   },
   {
@@ -329,15 +365,6 @@
    "id": "662822808043",
    "title": "成城さくら児童館第46回ちいきこどもまつり「おかしパラダイス～おなかいっぱいめしあがれ～」",
    "url": "https://www.city.setagaya.lg.jp/03078/28475.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-10-07"
-  },
-  {
-   "id": "b6d5993af9bc",
-   "title": "【終了しました】第29回アドベンチャーin多摩川いかだ下り大会",
-   "url": "https://www.city.setagaya.lg.jp/02059/2103.html",
    "source_id": "setagaya",
    "source": "世田谷区",
    "category": "区",
@@ -774,15 +801,6 @@
    "source": "世田谷区",
    "category": "区",
    "published_at": "2026-08-27"
-  },
-  {
-   "id": "4578c86209cd",
-   "title": "認可保育所整備・運営事業者の募集（提案型：令和10年4月開園）",
-   "url": "https://www.city.setagaya.lg.jp/02243/22540.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-08-20"
   },
   {
    "id": "863795232be0",
