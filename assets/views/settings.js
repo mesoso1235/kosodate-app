@@ -38,7 +38,7 @@ export async function render() {
       <div class="field"><label for="due">出産予定日</label><input id="due" type="date" data-action="date" data-key="due_date" value="${esc(due)}"></div>
       <div class="field"><label for="birth">誕生日（生まれたら入力）</label><input id="birth" type="date" data-action="date" data-key="birth_date" value="${esc(birth)}"></div>
       <p class="muted note">誕生日を入れると、期限を誕生日から数え直します。</p></section>
-    <section class="card"><h2>ログインの状態</h2>${account}</section>
+    <section class="card"><h2>${local ? "保存先" : "ログインの状態"}</h2>${account}</section>
     <section class="card"><h2>LINEボットの使い方</h2>
       <p>区のLINEなどで届いたお知らせは、専用のLINEボットに転送すると、このアプリの「お知らせ」に並びます。</p>
       <ol class="steps"><li>届いたメッセージを長押しして「転送」を選ぶ</li><li>転送先に、こそだてポケットのLINEボットを選ぶ</li><li>「お知らせに追加しました」と返ってきたら完了</li></ol>
