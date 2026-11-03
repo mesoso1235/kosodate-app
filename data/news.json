@@ -1,6 +1,42 @@
 {
- "updated_at": "2026-11-02T09:02:48+09:00",
+ "updated_at": "2026-11-03T11:43:08+09:00",
  "items": [
+  {
+   "id": "b0b6f68411bf",
+   "title": "おでかけひろばまもりん「看護師講座」",
+   "url": "https://www.city.setagaya.lg.jp/03086/36864.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-11-03"
+  },
+  {
+   "id": "6268942b34bc",
+   "title": "子どものけんりフェス×welcome baby ♡ family FES 開催！",
+   "url": "https://www.city.setagaya.lg.jp/02236/35524.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-11-02"
+  },
+  {
+   "id": "0bdd1a55f8ca",
+   "title": "明日（11/3）お菓子すくい屋さんやります♪",
+   "url": "https://www.setagaya-kosodate.net/info/27800/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
+   "published_at": "2026-11-02"
+  },
+  {
+   "id": "8021d562dd5d",
+   "title": "ハッピーハロウィン",
+   "url": "https://www.setagaya-kosodate.net/info/27794/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
+   "published_at": "2026-11-02"
+  },
   {
    "id": "bbf06217ff28",
    "title": "2026年12月分の両親学級の申し込みを開始しました（申込期間 11/1～11/15）",
@@ -45,15 +81,6 @@
    "source": "こどもスマイルムーブメント",
    "category": "都",
    "published_at": "2026-10-30"
-  },
-  {
-   "id": "6268942b34bc",
-   "title": "子どものけんりフェス×welcome baby ♡ family FES 開催！",
-   "url": "https://www.city.setagaya.lg.jp/02236/35524.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-10-28"
   },
   {
    "id": "24a507109f02",
