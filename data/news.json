@@ -1,6 +1,15 @@
 {
- "updated_at": "2026-11-05T10:09:42+09:00",
+ "updated_at": "2026-11-07T09:30:55+09:00",
  "items": [
+  {
+   "id": "b4ca09a72f6b",
+   "title": "南桜丘保育園の紹介",
+   "url": "https://www.city.setagaya.lg.jp/03012/32059.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-11-06"
+  },
   {
    "id": "ec8f1af5ffec",
    "title": "キャンドルナイト",
@@ -522,15 +531,6 @@
    "source": "世田谷区",
    "category": "区",
    "published_at": "2026-10-01"
-  },
-  {
-   "id": "b4ca09a72f6b",
-   "title": "南桜丘保育園の紹介",
-   "url": "https://www.city.setagaya.lg.jp/03012/32059.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-09-30"
   },
   {
    "id": "89f1f6435174",
