@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-08T09:04:57+09:00",
+ "updated_at": "2026-11-13T10:34:35+09:00",
  "items": [
   {
    "id": "c4841eae3e90",
@@ -98,6 +98,17 @@
    "place": "",
    "target": "",
    "url": "https://www.setagaya-kosodate.net/event/27535/",
+   "source": "せたがや子育てネット"
+  },
+  {
+   "id": "eb1723560975",
+   "title": "産前・産後のセルフケア講座（12/18祖師谷）",
+   "start": "2026-12-18",
+   "end": null,
+   "time": null,
+   "place": "",
+   "target": "",
+   "url": "https://www.setagaya-kosodate.net/event/27534/",
    "source": "せたがや子育てネット"
   }
  ]
