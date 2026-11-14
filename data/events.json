@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T10:34:35+09:00",
+ "updated_at": "2026-11-14T10:08:03+09:00",
  "items": [
   {
    "id": "c4841eae3e90",
@@ -109,6 +109,17 @@
    "place": "",
    "target": "",
    "url": "https://www.setagaya-kosodate.net/event/27534/",
+   "source": "せたがや子育てネット"
+  },
+  {
+   "id": "222e40a25eb6",
+   "title": "産前・産後のセルフケア講座（1/8桜丘）",
+   "start": "2027-01-08",
+   "end": null,
+   "time": null,
+   "place": "",
+   "target": "",
+   "url": "https://www.setagaya-kosodate.net/event/27807/",
    "source": "せたがや子育てネット"
   }
  ]
