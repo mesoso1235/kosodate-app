@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16T09:32:13+09:00",
+ "updated_at": "2026-11-17T12:19:07+09:00",
  "items": [
   {
    "id": "b1497c16cf8f",
@@ -7,6 +7,15 @@
    "url": "https://welcomebaby-setagaya.net/24980/",
    "source_id": "welcomebaby",
    "source": "世田谷区 両親学級ポータル",
+   "category": "区",
+   "published_at": "2026-11-16"
+  },
+  {
+   "id": "98cc74e0512e",
+   "title": "ふるさと納税「学校指定寄附」のご案内",
+   "url": "https://www.city.setagaya.lg.jp/02028/28185.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
    "category": "区",
    "published_at": "2026-11-16"
   },
@@ -666,15 +675,6 @@
    "source": "せたがや子育てネット",
    "category": "民間",
    "published_at": "2026-10-04"
-  },
-  {
-   "id": "98cc74e0512e",
-   "title": "ふるさと納税「学校指定寄附」のご案内",
-   "url": "https://www.city.setagaya.lg.jp/02028/28185.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-10-01"
   },
   {
    "id": "484bd85a3f89",
