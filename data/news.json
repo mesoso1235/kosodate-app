@@ -1,6 +1,15 @@
 {
- "updated_at": "2026-11-18T11:40:22+09:00",
+ "updated_at": "2026-11-19T11:08:07+09:00",
  "items": [
+  {
+   "id": "0844f2399fd1",
+   "title": "第42回太子堂こどもマラソン大会参加者を募集します",
+   "url": "https://www.city.setagaya.lg.jp/01046/22063.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-11-19"
+  },
   {
    "id": "630cd6245f51",
    "title": "育業促進参画企業・団体活動レポートを公開しました【アース製薬株式会社】",
@@ -8,6 +17,15 @@
    "source_id": "kodomo-smile",
    "source": "こどもスマイルムーブメント",
    "category": "都",
+   "published_at": "2026-11-18"
+  },
+  {
+   "id": "cea02aa6b559",
+   "title": "世田谷版こども誰でも通園制度（乳児等通園支援事業）について",
+   "url": "https://www.city.setagaya.lg.jp/02243/29576.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
    "published_at": "2026-11-18"
   },
   {
@@ -342,15 +360,6 @@
    "source": "助産師会 世田谷目黒",
    "category": "民間",
    "published_at": "2026-10-24"
-  },
-  {
-   "id": "cea02aa6b559",
-   "title": "世田谷版こども誰でも通園制度（乳児等通園支援事業）について",
-   "url": "https://www.city.setagaya.lg.jp/02243/29576.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-10-23"
   },
   {
    "id": "104a4a77caba",
