@@ -1,6 +1,15 @@
 {
- "updated_at": "2026-11-19T11:08:07+09:00",
+ "updated_at": "2026-11-20T10:57:15+09:00",
  "items": [
+  {
+   "id": "93b213d5d544",
+   "title": "私立幼稚園の入園について",
+   "url": "https://www.city.setagaya.lg.jp/02236/1654.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-11-20"
+  },
   {
    "id": "0844f2399fd1",
    "title": "第42回太子堂こどもマラソン大会参加者を募集します",
@@ -135,15 +144,6 @@
    "source": "せたがや子育てネット",
    "category": "民間",
    "published_at": "2026-11-11"
-  },
-  {
-   "id": "93b213d5d544",
-   "title": "私立幼稚園の入園について",
-   "url": "https://www.city.setagaya.lg.jp/02236/1654.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-11-10"
   },
   {
    "id": "36eeb7213544",
