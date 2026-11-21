@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T11:08:07+09:00",
+ "updated_at": "2026-11-21T10:53:17+09:00",
  "items": [
   {
    "id": "179c13abe01d",
@@ -36,7 +36,7 @@
   },
   {
    "id": "08e15d2a7090",
-   "title": "産前・産後のセルフケア講座（12/4等々力）",
+   "title": "産前・産後のセルフケア講座（12/4等々力）※産後枠満席",
    "start": "2026-12-04",
    "end": null,
    "time": null,
@@ -109,6 +109,17 @@
    "place": "",
    "target": "",
    "url": "https://www.setagaya-kosodate.net/event/27807/",
+   "source": "せたがや子育てネット"
+  },
+  {
+   "id": "0cb62a229c58",
+   "title": "産前・産後のセルフケア講座（1/8玉川台）",
+   "start": "2027-01-08",
+   "end": null,
+   "time": null,
+   "place": "",
+   "target": "",
+   "url": "https://www.setagaya-kosodate.net/event/27808/",
    "source": "せたがや子育てネット"
   }
  ]

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T10:57:15+09:00",
+ "updated_at": "2026-11-21T10:53:17+09:00",
  "items": [
   {
    "id": "93b213d5d544",
@@ -8,6 +8,24 @@
    "source_id": "setagaya",
    "source": "世田谷区",
    "category": "区",
+   "published_at": "2026-11-20"
+  },
+  {
+   "id": "529c7dda12ce",
+   "title": "初心者向け 子育て世帯のライフプラン ～教育、住宅、老後のお金は？ NISAってやった方がいいの？～",
+   "url": "https://www.city.setagaya.lg.jp/02413/34832.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-11-20"
+  },
+  {
+   "id": "99c3f25a07a6",
+   "title": "令和8年度 こどもスマイルムーブメント大賞 表彰式を開催します！（11月30日）",
+   "url": "https://kodomo-smile.metro.tokyo.lg.jp/stp/kodomo/r8_awards_ceremony.html",
+   "source_id": "kodomo-smile",
+   "source": "こどもスマイルムーブメント",
+   "category": "都",
    "published_at": "2026-11-20"
   },
   {
@@ -401,15 +419,6 @@
    "id": "fdcd7112ed9f",
    "title": "烏山児童館ハイキング「江の島 龍の恋ものがたり～スタンプ集めてラブリーチャンス～」",
    "url": "https://www.city.setagaya.lg.jp/03082/36489.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-10-20"
-  },
-  {
-   "id": "529c7dda12ce",
-   "title": "初心者向け 子育て世帯のライフプラン ～教育、住宅、老後のお金は？ NISAってやった方がいいの？～",
-   "url": "https://www.city.setagaya.lg.jp/02413/34832.html",
    "source_id": "setagaya",
    "source": "世田谷区",
    "category": "区",
