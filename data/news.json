@@ -1,6 +1,24 @@
 {
- "updated_at": "2026-11-21T10:53:17+09:00",
+ "updated_at": "2026-11-22T09:47:52+09:00",
  "items": [
+  {
+   "id": "2345ff35d225",
+   "title": "11月 ころころすくすく",
+   "url": "https://www.setagaya-kosodate.net/info/27981/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
+   "published_at": "2026-11-21"
+  },
+  {
+   "id": "3fa0bf418f6b",
+   "title": "寺町散策",
+   "url": "https://www.setagaya-kosodate.net/info/27976/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
+   "published_at": "2026-11-21"
+  },
   {
    "id": "93b213d5d544",
    "title": "私立幼稚園の入園について",
@@ -26,6 +44,24 @@
    "source_id": "kodomo-smile",
    "source": "こどもスマイルムーブメント",
    "category": "都",
+   "published_at": "2026-11-20"
+  },
+  {
+   "id": "e8b437e93527",
+   "title": "松沢児童館 子育て講座「親子で楽しむわらべうた」",
+   "url": "https://www.city.setagaya.lg.jp/03068/33742.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-11-20"
+  },
+  {
+   "id": "34e6693e7880",
+   "title": "いいお天気♪",
+   "url": "https://www.setagaya-kosodate.net/info/27970/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
    "published_at": "2026-11-20"
   },
   {
