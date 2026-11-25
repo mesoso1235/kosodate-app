@@ -1,6 +1,42 @@
 {
- "updated_at": "2026-11-22T09:47:52+09:00",
+ "updated_at": "2026-11-25T12:52:35+09:00",
  "items": [
+  {
+   "id": "f0592c79e8b7",
+   "title": "区立希望丘保育園内おでかけひろば『にじ』",
+   "url": "https://www.city.setagaya.lg.jp/03042/1248.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-11-25"
+  },
+  {
+   "id": "a016f6abfe1a",
+   "title": "令和8年度 精神保健福祉講演会「家族になるってどういうこと？～赤ちゃんを迎えた二人のこころの変化とコミュニケーション～」",
+   "url": "https://www.city.setagaya.lg.jp/02201/28597.html",
+   "source_id": "setagaya",
+   "source": "世田谷区",
+   "category": "区",
+   "published_at": "2026-11-25"
+  },
+  {
+   "id": "eb56ceb0401d",
+   "title": "カリン",
+   "url": "https://www.setagaya-kosodate.net/info/27996/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
+   "published_at": "2026-11-24"
+  },
+  {
+   "id": "c6c050a16085",
+   "title": "12月予約制プログラムの予約開始",
+   "url": "https://www.setagaya-kosodate.net/info/27989/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
+   "published_at": "2026-11-24"
+  },
   {
    "id": "2345ff35d225",
    "title": "11月 ころころすくすく",
@@ -396,15 +432,6 @@
    "source": "せたがや子育てネット",
    "category": "民間",
    "published_at": "2026-10-26"
-  },
-  {
-   "id": "f0592c79e8b7",
-   "title": "区立希望丘保育園内おでかけひろば『にじ』",
-   "url": "https://www.city.setagaya.lg.jp/03042/1248.html",
-   "source_id": "setagaya",
-   "source": "世田谷区",
-   "category": "区",
-   "published_at": "2026-10-25"
   },
   {
    "id": "6d43a9325866",
