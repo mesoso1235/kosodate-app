@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T09:47:52+09:00",
+ "updated_at": "2026-11-27T12:23:12+09:00",
  "items": [
   {
    "id": "de67b03fc9ac",
@@ -109,6 +109,17 @@
    "place": "",
    "target": "",
    "url": "https://www.setagaya-kosodate.net/event/27808/",
+   "source": "せたがや子育てネット"
+  },
+  {
+   "id": "da109e2331e1",
+   "title": "産前・産後のセルフケア講座（1/15喜多見）",
+   "start": "2027-01-15",
+   "end": null,
+   "time": null,
+   "place": "",
+   "target": "",
+   "url": "https://www.setagaya-kosodate.net/event/27809/",
    "source": "せたがや子育てネット"
   }
  ]
