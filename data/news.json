@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T12:23:12+09:00",
+ "updated_at": "2026-11-28T12:00:17+09:00",
  "items": [
   {
    "id": "219139d549fc",
@@ -17,6 +17,15 @@
    "source_id": "kodomo-smile",
    "source": "こどもスマイルムーブメント",
    "category": "都",
+   "published_at": "2026-11-27"
+  },
+  {
+   "id": "cf2045683fdf",
+   "title": "今日のぶんぶく",
+   "url": "https://www.setagaya-kosodate.net/info/28027/",
+   "source_id": "kosodate-net",
+   "source": "せたがや子育てネット",
+   "category": "民間",
    "published_at": "2026-11-27"
   },
   {
